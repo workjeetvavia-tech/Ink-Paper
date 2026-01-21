@@ -16,11 +16,3 @@ export type Category = 'Pens' | 'Notebooks' | 'Art Supplies' | 'Desk Accessories
 export interface CartItem extends Product {
   quantity: number;
 }
-
-export interface ChatMessage {
-  id: string;
-  role: 'user' | 'model';
-  text: string;
-  isLoading?: boolean;
-  relatedProductIds?: string[];
-}

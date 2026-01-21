@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductCard from './components/ProductCard';
 import CartDrawer from './components/CartDrawer';
-import AIAssistant from './components/AIAssistant';
 import Footer from './components/Footer';
 import SupportPage from './components/SupportPage';
 import AccountPage from './components/AccountPage';
@@ -374,8 +373,6 @@ function App() {
         onUpdateQuantity={updateQuantity}
         onCheckout={handleCheckoutClick}
       />
-
-      {view !== 'checkout' && view !== 'order-success' && <AIAssistant />}
     </div>
   );
 }
